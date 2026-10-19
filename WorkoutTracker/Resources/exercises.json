@@ -1,0 +1,661 @@
+[
+  {
+    "id": "barbell-bench-press",
+    "name": "Barbell Bench Press",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 4,
+    "defaultReps": 8,
+    "instructions": [
+      "Lie on the bench with eyes under the bar and feet flat.",
+      "Grip slightly wider than shoulder width and unrack.",
+      "Lower the bar to mid-chest under control.",
+      "Press back up until arms are straight."
+    ]
+  },
+  {
+    "id": "incline-dumbbell-press",
+    "name": "Incline Dumbbell Press",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "shoulders",
+      "triceps"
+    ],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Set the bench to about 30 degrees.",
+      "Press the dumbbells up over your upper chest.",
+      "Lower until the dumbbells are beside your chest, then press up."
+    ]
+  },
+  {
+    "id": "push-up",
+    "name": "Push-Up",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "shoulders",
+      "abdominals"
+    ],
+    "equipment": "body only",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 15,
+    "instructions": [
+      "Start in a high plank with hands under shoulders.",
+      "Lower your chest to just above the floor, body in a straight line.",
+      "Push back up to the start."
+    ]
+  },
+  {
+    "id": "cable-fly",
+    "name": "Cable Fly",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "cable",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Set both pulleys at shoulder height and step forward.",
+      "With a slight bend in the elbows, bring the handles together in front of your chest.",
+      "Return slowly until you feel a stretch."
+    ]
+  },
+  {
+    "id": "dips",
+    "name": "Dips",
+    "primaryMuscles": [
+      "triceps"
+    ],
+    "secondaryMuscles": [
+      "chest",
+      "shoulders"
+    ],
+    "equipment": "body only",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Support yourself on parallel bars with arms straight.",
+      "Lower until upper arms are parallel to the floor.",
+      "Press back up to the start."
+    ]
+  },
+  {
+    "id": "overhead-press",
+    "name": "Overhead Press",
+    "primaryMuscles": [
+      "shoulders"
+    ],
+    "secondaryMuscles": [
+      "triceps"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 4,
+    "defaultReps": 6,
+    "instructions": [
+      "Hold the bar at shoulder height, grip just outside shoulders.",
+      "Brace and press the bar straight overhead.",
+      "Lower under control to your shoulders."
+    ]
+  },
+  {
+    "id": "dumbbell-lateral-raise",
+    "name": "Dumbbell Lateral Raise",
+    "primaryMuscles": [
+      "shoulders"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 15,
+    "instructions": [
+      "Stand with dumbbells at your sides.",
+      "Raise them out to the sides to shoulder height with a slight elbow bend.",
+      "Lower slowly."
+    ]
+  },
+  {
+    "id": "face-pull",
+    "name": "Face Pull",
+    "primaryMuscles": [
+      "shoulders"
+    ],
+    "secondaryMuscles": [
+      "middle back"
+    ],
+    "equipment": "cable",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 15,
+    "instructions": [
+      "Set a rope at upper-chest height.",
+      "Pull the rope toward your face, splitting the ends apart.",
+      "Squeeze your shoulder blades, then return."
+    ]
+  },
+  {
+    "id": "triceps-pushdown",
+    "name": "Triceps Pushdown",
+    "primaryMuscles": [
+      "triceps"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Grip the bar or rope at chest height, elbows at your sides.",
+      "Push down until arms are straight.",
+      "Let it rise back to chest height without moving your elbows."
+    ]
+  },
+  {
+    "id": "skull-crusher",
+    "name": "Skull Crusher",
+    "primaryMuscles": [
+      "triceps"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "e-z curl bar",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Lie on a bench holding the bar over your chest.",
+      "Bend the elbows to lower the bar toward your forehead.",
+      "Extend the arms back to the start."
+    ]
+  },
+  {
+    "id": "pull-up",
+    "name": "Pull-Up",
+    "primaryMuscles": [
+      "lats"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "middle back"
+    ],
+    "equipment": "body only",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 4,
+    "defaultReps": 8,
+    "instructions": [
+      "Hang from the bar with an overhand grip.",
+      "Pull until your chin clears the bar.",
+      "Lower all the way down with control."
+    ]
+  },
+  {
+    "id": "lat-pulldown",
+    "name": "Lat Pulldown",
+    "primaryMuscles": [
+      "lats"
+    ],
+    "secondaryMuscles": [
+      "biceps"
+    ],
+    "equipment": "cable",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Sit with thighs under the pads and grip the bar wide.",
+      "Pull the bar to your upper chest.",
+      "Return slowly until arms are straight."
+    ]
+  },
+  {
+    "id": "barbell-row",
+    "name": "Barbell Row",
+    "primaryMuscles": [
+      "middle back"
+    ],
+    "secondaryMuscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 4,
+    "defaultReps": 8,
+    "instructions": [
+      "Hinge forward with a flat back, bar hanging at arm's length.",
+      "Row the bar to your lower ribs.",
+      "Lower under control."
+    ]
+  },
+  {
+    "id": "seated-cable-row",
+    "name": "Seated Cable Row",
+    "primaryMuscles": [
+      "middle back"
+    ],
+    "secondaryMuscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment": "cable",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Sit tall with feet on the platform.",
+      "Pull the handle to your stomach, squeezing your shoulder blades.",
+      "Extend your arms forward again."
+    ]
+  },
+  {
+    "id": "one-arm-dumbbell-row",
+    "name": "One-Arm Dumbbell Row",
+    "primaryMuscles": [
+      "middle back"
+    ],
+    "secondaryMuscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Brace one hand and knee on a bench.",
+      "Row the dumbbell to your hip.",
+      "Lower it until your arm is straight."
+    ]
+  },
+  {
+    "id": "deadlift",
+    "name": "Deadlift",
+    "primaryMuscles": [
+      "lower back"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "glutes",
+      "quadriceps"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 5,
+    "instructions": [
+      "Stand with the bar over mid-foot.",
+      "Hinge and grip the bar, back flat, chest up.",
+      "Drive through the floor and stand tall.",
+      "Lower the bar by pushing the hips back."
+    ]
+  },
+  {
+    "id": "barbell-curl",
+    "name": "Barbell Curl",
+    "primaryMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Stand holding the bar with an underhand grip.",
+      "Curl the bar to your shoulders, elbows still.",
+      "Lower slowly."
+    ]
+  },
+  {
+    "id": "hammer-curl",
+    "name": "Hammer Curl",
+    "primaryMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Hold dumbbells with palms facing each other.",
+      "Curl them up without rotating your wrists.",
+      "Lower with control."
+    ]
+  },
+  {
+    "id": "back-squat",
+    "name": "Back Squat",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hamstrings",
+      "lower back"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 4,
+    "defaultReps": 6,
+    "instructions": [
+      "Rest the bar on your upper back, feet shoulder width.",
+      "Sit down and back until thighs are at least parallel.",
+      "Drive up through your whole foot."
+    ]
+  },
+  {
+    "id": "goblet-squat",
+    "name": "Goblet Squat",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes"
+    ],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Hold a dumbbell vertically at your chest.",
+      "Squat between your knees, chest tall.",
+      "Stand back up."
+    ]
+  },
+  {
+    "id": "leg-press",
+    "name": "Leg Press",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "machine",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Sit with feet shoulder width on the platform.",
+      "Lower the sled until knees reach about 90 degrees.",
+      "Press back up without locking your knees."
+    ]
+  },
+  {
+    "id": "walking-lunge",
+    "name": "Walking Lunge",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Hold dumbbells at your sides.",
+      "Step forward and lower until both knees are bent about 90 degrees.",
+      "Push through the front foot into the next step."
+    ]
+  },
+  {
+    "id": "bulgarian-split-squat",
+    "name": "Bulgarian Split Squat",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes"
+    ],
+    "equipment": "dumbbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Rest your back foot on a bench behind you.",
+      "Lower until the front thigh is parallel to the floor.",
+      "Drive up through the front foot."
+    ]
+  },
+  {
+    "id": "leg-extension",
+    "name": "Leg Extension",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Sit with the pad on your lower shins.",
+      "Extend your legs until straight.",
+      "Lower slowly."
+    ]
+  },
+  {
+    "id": "romanian-deadlift",
+    "name": "Romanian Deadlift",
+    "primaryMuscles": [
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "lower back"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 8,
+    "instructions": [
+      "Hold the bar at hip height.",
+      "Push your hips back, sliding the bar down your thighs with a flat back.",
+      "Stand up by driving your hips forward."
+    ]
+  },
+  {
+    "id": "lying-leg-curl",
+    "name": "Lying Leg Curl",
+    "primaryMuscles": [
+      "hamstrings"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Lie face down with the pad above your heels.",
+      "Curl your heels toward your glutes.",
+      "Lower with control."
+    ]
+  },
+  {
+    "id": "hip-thrust",
+    "name": "Hip Thrust",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings"
+    ],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 10,
+    "instructions": [
+      "Sit with your upper back against a bench, bar over your hips.",
+      "Drive your hips up until your body is flat from shoulders to knees.",
+      "Lower and repeat."
+    ]
+  },
+  {
+    "id": "standing-calf-raise",
+    "name": "Standing Calf Raise",
+    "primaryMuscles": [
+      "calves"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 4,
+    "defaultReps": 15,
+    "instructions": [
+      "Stand with the balls of your feet on the platform.",
+      "Rise as high as you can onto your toes.",
+      "Lower until you feel a stretch."
+    ]
+  },
+  {
+    "id": "hanging-leg-raise",
+    "name": "Hanging Leg Raise",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "body only",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Hang from a pull-up bar.",
+      "Raise your legs until they are parallel to the floor or higher.",
+      "Lower slowly without swinging."
+    ]
+  },
+  {
+    "id": "cable-crunch",
+    "name": "Cable Crunch",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 15,
+    "instructions": [
+      "Kneel facing a high pulley, holding the rope beside your head.",
+      "Crunch down, bringing your elbows toward your thighs.",
+      "Return slowly."
+    ]
+  },
+  {
+    "id": "russian-twist",
+    "name": "Russian Twist",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "body only",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 20,
+    "instructions": [
+      "Sit with knees bent and lean back slightly.",
+      "Rotate your torso side to side, touching the floor beside each hip."
+    ]
+  },
+  {
+    "id": "kettlebell-swing",
+    "name": "Kettlebell Swing",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "lower back",
+      "shoulders"
+    ],
+    "equipment": "kettlebells",
+    "category": "strength",
+    "level": "intermediate",
+    "defaultSets": 3,
+    "defaultReps": 15,
+    "instructions": [
+      "Hinge and hike the kettlebell back between your legs.",
+      "Snap your hips forward to swing it to chest height.",
+      "Let it fall back and repeat."
+    ]
+  },
+  {
+    "id": "barbell-shrug",
+    "name": "Barbell Shrug",
+    "primaryMuscles": [
+      "traps"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "barbell",
+    "category": "strength",
+    "level": "beginner",
+    "defaultSets": 3,
+    "defaultReps": 12,
+    "instructions": [
+      "Hold the bar at arm's length.",
+      "Shrug your shoulders straight up toward your ears.",
+      "Lower slowly."
+    ]
+  }
+]
