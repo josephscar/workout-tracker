@@ -64,15 +64,18 @@ WorkoutTracker/
   PlanStore.swift   Holds the week plan and saves every change
   Resources/exercises.json
 WorkoutTrackerTests/   Unit tests (Swift Testing)
+WorkoutTrackerUITests/ A UI test that plans a week by tapping through the app
 ```
 
 ## Tests
 
-Run them in Xcode with ⌘U, or from the command line:
+Run them in Xcode with ⌘U, or from the command line (use any iPhone simulator you have installed):
 
 ```sh
 xcodebuild test -project WorkoutTracker.xcodeproj -scheme WorkoutTracker \
-  -destination 'platform=iOS Simulator,name=iPhone 16'
+  -destination 'platform=iOS Simulator,name=iPhone 17'
 ```
 
-GitHub Actions builds the app and runs the tests on every push.
+GitHub Actions builds the app and runs the tests on every push. The UI test
+takes screenshots of each screen; download them from the run's **screenshots**
+artifact on the Actions tab.
