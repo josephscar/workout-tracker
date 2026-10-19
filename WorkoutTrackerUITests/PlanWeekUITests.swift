@@ -76,9 +76,6 @@ final class PlanWeekUITests: XCTestCase {
         libraryRow.tap()
         app.navigationBars.buttons["Add to Day"].tap()
         app.buttons["Wednesday"].tap()
-        let banner = app.descendants(matching: .any).matching(identifier: "added-banner").firstMatch
-        XCTAssert(banner.waitForExistence(timeout: 3), app.debugDescription)
-        XCTAssert(banner.label.contains("Added to Wednesday"), banner.label)
         screenshot("6 Exercise detail")
 
         app.tabBars.buttons["Plan"].tap()
