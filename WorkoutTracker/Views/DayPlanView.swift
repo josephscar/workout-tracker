@@ -31,6 +31,7 @@ struct DayPlanView: View {
                         } label: {
                             PlannedExerciseRow(planned: planned)
                         }
+                        .accessibilityIdentifier("planned-exercise")
                     }
                     .onDelete { offsets in
                         store.plan[day].exercises.remove(atOffsets: offsets)

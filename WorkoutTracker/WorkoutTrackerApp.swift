@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct WorkoutTrackerApp: App {
-    @State private var planStore = PlanStore()
+    @State private var planStore = WorkoutTrackerApp.makePlanStore()
     private let library: ExerciseLibrary
     private let libraryError: String?
 
@@ -14,6 +14,16 @@ struct WorkoutTrackerApp: App {
             library = ExerciseLibrary(exercises: [])
             libraryError = ExerciseLibrary.describe(error)
         }
+    }
+
+    private static func makePlanStore() -> PlanStore {
+        guard ProcessInfo.processInfo.arguments.contains("-ui-testing") else {
+            return PlanStore()
+        }
+        // UI tests start from an empty week, kept apart from your real plan.
+        let storage = JSONFileStorage<WeekPlan>.appSupport("ui-testing-week-plan.json")
+        try? FileManager.default.removeItem(at: storage.url)
+        return PlanStore(storage: storage)
     }
 
     var body: some Scene {

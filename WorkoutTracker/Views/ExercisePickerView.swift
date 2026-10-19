@@ -43,6 +43,7 @@ struct ExercisePickerView: View {
                             .contentShape(Rectangle())
                         }
                         .accessibilityAddTraits(selection.contains(exercise.id) ? .isSelected : [])
+                        .accessibilityIdentifier("exercise-option")
                     }
                 } header: {
                     Text("\(results.count) \(results.count == 1 ? "exercise" : "exercises")")

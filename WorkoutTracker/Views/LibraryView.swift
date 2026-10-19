@@ -20,6 +20,7 @@ struct LibraryView: View {
                         NavigationLink(value: exercise) {
                             ExerciseRow(exercise: exercise)
                         }
+                        .accessibilityIdentifier("library-exercise")
                     }
                 } header: {
                     Text("\(results.count) \(results.count == 1 ? "exercise" : "exercises")")

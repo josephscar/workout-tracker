@@ -16,6 +16,7 @@ struct WeekView: View {
                         NavigationLink(value: day.weekday) {
                             DayRow(day: day, isToday: day.weekday == today)
                         }
+                        .accessibilityIdentifier("day-\(day.weekday)")
                     }
                 } footer: {
                     Text(summary)
