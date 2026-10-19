@@ -3,3 +3,5 @@ xcuserdata/
 *.xcuserstate
 DerivedData/
 build/
+TestResults.xcresult/
+summary.json

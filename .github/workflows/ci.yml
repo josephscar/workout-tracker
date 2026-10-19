@@ -27,7 +27,20 @@ jobs:
           -project WorkoutTracker.xcodeproj
           -scheme WorkoutTracker
           -destination "platform=iOS Simulator,id=$SIMULATOR_ID"
+          -resultBundlePath TestResults.xcresult
           CODE_SIGNING_ALLOWED=NO
+      - name: Test summary
+        if: always()
+        run: |
+          xcrun xcresulttool get test-results summary --path TestResults.xcresult --format json > summary.json
+          python3 - <<'EOF'
+          import json
+          s = json.load(open("summary.json"))
+          print(f"{s['result']}: {s['passedTests']} passed, {s['failedTests']} failed, {s['skippedTests']} skipped of {s['totalTestCount']}")
+          for failure in s.get("testFailures", []):
+              print("FAILED", failure.get("testName"), "-", failure.get("failureText"))
+          assert s["totalTestCount"] > 0, "No tests ran"
+          EOF
       - name: Build Release
         run: >
           xcodebuild build -quiet

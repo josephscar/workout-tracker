@@ -10,13 +10,12 @@ struct DayPlanView: View {
     @State private var confirmingClear = false
 
     var body: some View {
-        @Bindable var store = store
         let plan = store.plan[day]
 
         List {
             Section {
-                TextField("Workout name, e.g. Push Day", text: $store.plan[day].title)
-                Toggle("Rest day", isOn: $store.plan[day].isRestDay)
+                TextField("Workout name, e.g. Push Day", text: binding(\.title))
+                Toggle("Rest day", isOn: binding(\.isRestDay))
             }
 
             if plan.isRestDay {
@@ -87,6 +86,14 @@ struct DayPlanView: View {
         .sheet(item: $editing) { planned in
             PlannedExerciseEditor(day: day, planned: planned)
         }
+    }
+
+    /// A binding to one field of this day's plan in the store.
+    private func binding<Value>(_ field: WritableKeyPath<DayPlan, Value>) -> Binding<Value> {
+        Binding(
+            get: { store.plan[day][keyPath: field] },
+            set: { store.plan[day][keyPath: field] = $0 }
+        )
     }
 }
 

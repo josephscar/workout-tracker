@@ -8,7 +8,7 @@ final class PlanStore {
     private let storage: JSONFileStorage<WeekPlan>
 
     /// Set when a save fails, so the UI can tell you.
-    var saveError: String?
+    var saveError: String? = nil
 
     var plan: WeekPlan {
         get { storedPlan }

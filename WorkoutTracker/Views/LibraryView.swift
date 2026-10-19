@@ -77,8 +77,12 @@ struct ExerciseDetailView: View {
         .animation(.spring(duration: 0.3), value: addedTo)
         .task(id: addedTo) {
             guard addedTo != nil else { return }
-            try? await Task.sleep(for: .seconds(2))
-            addedTo = nil
+            do {
+                try await Task.sleep(for: .seconds(2))
+                addedTo = nil
+            } catch {
+                // Replaced by a newer confirmation.
+            }
         }
     }
 }

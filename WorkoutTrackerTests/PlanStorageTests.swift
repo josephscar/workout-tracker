@@ -29,7 +29,7 @@ struct PlanStorageTests {
 
         let files = try FileManager.default.contentsOfDirectory(atPath: directory.path)
         #expect(!files.contains("week-plan.json"))
-        #expect(files.contains { $0.hasPrefix("week-plan.unreadable-") && $0.hasSuffix(".json") })
+        #expect(files.contains(where: { $0.hasPrefix("week-plan.unreadable-") && $0.hasSuffix(".json") }))
     }
 
     @Test func storeSavesEveryChange() throws {
