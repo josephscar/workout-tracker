@@ -73,6 +73,7 @@ struct ExerciseDetailView: View {
                     .background(.regularMaterial, in: Capsule())
                     .padding(.bottom, 24)
                     .transition(.move(edge: .bottom).combined(with: .opacity))
+                    .accessibilityIdentifier("added-banner")
             }
         }
         .animation(.spring(duration: 0.3), value: addedTo)
