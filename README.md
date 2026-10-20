@@ -18,6 +18,14 @@ ID works; Xcode may ask you to change the bundle identifier to something unique.
 
 Requires iOS 17 or later.
 
+### Try it without Xcode
+
+Every CI run also builds the app for the iOS Simulator. Open the latest run on the
+**Actions** tab, download the **simulator-app** artifact, and unzip it once to get
+`WorkoutTracker-Simulator.zip`. Upload that file as-is to a browser simulator such as
+Appetize, or unzip it and drag `WorkoutTracker.app` onto a running Simulator. It won't
+install on a real iPhone; for that, use Xcode as above.
+
 ## What's in it
 
 | Tab | What you can do |
